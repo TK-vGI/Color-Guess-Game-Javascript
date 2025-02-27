@@ -1,0 +1,55 @@
+body {
+    background-color: white;
+    font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+h1, p, button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 30pt;
+    color: #0e6c8a;
+    margin-bottom: 10px;
+}
+
+p#rgb-color, p#status {
+    font-size: 18pt;
+    color: black;
+}
+
+button#restart {
+    background-color: lightgrey;
+    color: black;
+    font-size: 16pt;
+    padding: 5px 10px;
+    border: none;
+    border-radius: .3rem;
+    width: 80pt;
+    height: 40pt;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    text-align: center;
+    justify-content: space-evenly;
+}
+button#restart:hover {
+    background-color: dimgrey;
+    color: white;
+}
+
+.color-block {
+    display: inline-block;
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    width: 25pt;
+    height: 25pt;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.color-block:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
